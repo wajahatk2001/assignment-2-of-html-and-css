@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+        body{
+            background: #1b1b32;
+            text-align: center;
+            color: white;            
+        }
+        h1{
+           font-family: 'Roboto', sans-serif;
+
+        }
+        div p:not(#formtype){
+           position: relative;
+           left: 38.9%;
+           text-align: justify;
+           margin: .65%;
+           margin-right: 70%;
+
+        }
+        .form{
+            background-color: #0a0a23;
+            width: 27.5em;
+            height: 1.5em;
+        }
+        hr{
+            border-color:#3b3b4f;
+            border-top: .2px solid #3b3b4f ;
+            width: 25.5em;
+           position: relative;
+           margin-top: 2em;
+           margin-bottom: 1em;
+        }
+        input{
+            outline: none;
+            font-size: 85%;
+            padding: 0 15px;
+            border: 10px;
+            color: aliceblue;
+
+        }
+        .options{
+            position: relative;
+            right: 6.7%;   
+            margin: .5%;  
+        }
+        .optionsc{
+            width: 30em;
+            height: 2em;
+        }
+        .terms{
+            position: relative;
+            right:   4%;   
+            margin: .5%;
+        }
+        a{
+            color: white;
+        }
+        div span{
+            position: absolute;
+            left: 740px;
+            font-size: 80%;
+
+        }
+        textarea{
+            color: white;
+            outline: none;
+            border: 10px;
+        }
+        div button{
+            position: relative;
+            margin-top: 1.5em;
+            border: 1.5px solid white;
+            outline: none;
+            font-size: 15px;
+            padding: 3px 7px;
+            text-align: center;
+            width: 10%;
+            background: transparent;
+            color: aliceblue;
+            cursor: pointer; 
+            background-color: #3b3b4f;
+        }
+        button:hover{
+          text-transform: uppercase;
+          letter-spacing: 0.050em;
+          transition: 0.8s;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 id="formname">Registration Form</h1>
+        <p class="formtype" id="formtype">Please fill out this form with the required information</p>
+        <br>
+    </div>
+    <div>
+        <form action="">
+            <p>Enter your First Name:</p>
+            <input type="text" id="firstname" class="form" required>
+
+            <p>Enter your Last Name:</p>
+            <input type="text" id="lastname" class="form">
+
+            <p>Enter your Email:</p>
+            <input type="email" id="email" class="form"  required>
+
+            <p>Create a New Password:</p>
+            <input type="text" id="pass" class="form"  required>
+            <br>
+            <hr>
+            <input class="options" type="radio" name="acc.type" required>
+            <label class="options" for="pers.acc">Personal Account</label>
+            <br>
+            <input class="options" type="radio" name="acc.type" required>
+            <label class="options" for="business.acc">Business Account</label>
+            <br>
+            <input class="terms" type="checkbox" required>
+            <label class="terms" for="terms"> I accept the <a href="#termsandcond.">terms and conditions</a></label>
+            <hr>
+            <br>
+
+            <p>Upload a profile picture:</p>
+            <input type="text" name="" id="file" class="form"  readonly required>
+            <span class="file"><input type="file"></span>
+
+            <p>Upload your age(years):</p>
+            <input type="number" name="" id="" class="form"  required>
+
+            <P>How did you hear about us?</P>
+            <select class="optionsc" name="socials" id="socails">
+                <option value="0">(select one)</option>
+                <option value="1">Facebook</option>
+                <option value="2">Instagram</option>
+                <option value="3">WhatsApp</option>
+                <option value="4">From a friend</option>
+                <option value="5">Advertisement</option>
+            </select>
+
+            <div>
+            <p>Provide a bio:</p>
+            <textarea name="bio" id="bio" cols="40" rows="8" class="form" placeholder="I like coding on the beach..."></textarea>
+            </div>
+            <div class="button">
+            <button type="submit" class="SUBMIT">SUBMIT</button>
+            </div>
+        </form>
+
+    </div>
+
+</body>
+</html>
